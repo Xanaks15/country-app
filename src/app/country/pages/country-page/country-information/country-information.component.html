@@ -1,0 +1,119 @@
+<section class="mx-10">
+  <div class="stats shadow">
+    <div class="stat">
+      <div class="stat-title">Pais</div>
+      <div class="stat-value text-primary">{{ country().name }}</div>
+      <div class="stat-desc">{{ country().region }}</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-figure text-primary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+        >
+          <path
+            fill="currentColor"
+            d="M21.066 20.667c1.227-.682 1.068-3.31-.354-5.874c-.61-1.104-1.36-1.998-2.11-2.623a5.23 5.23 0 0 1-3.1 1.03a5.23 5.23 0 0 1-3.105-1.03c-.75.625-1.498 1.52-2.11 2.623c-1.423 2.563-1.58 5.192-.35 5.874c.548.312 1.126.078 1.722-.496a10.5 10.5 0 0 0-.167 1.874c0 2.938 1.14 5.312 2.543 5.312c.846 0 1.265-.865 1.466-2.188c.2 1.314.62 2.188 1.46 2.188c1.397 0 2.546-2.375 2.546-5.312c0-.66-.062-1.29-.168-1.873c.6.575 1.176.813 1.726.497zM15.5 12.2a4.279 4.279 0 1 0-.003-8.557A4.279 4.279 0 0 0 15.5 12.2m8.594 2.714a3.514 3.514 0 0 0 0-7.025a3.513 3.513 0 1 0 .001 7.027zm4.28 2.13c-.502-.908-1.116-1.642-1.732-2.155a4.3 4.3 0 0 1-2.546.845c-.756 0-1.46-.207-2.076-.55c.496 1.093.803 2.2.86 3.19c.094 1.516-.38 2.64-1.328 3.165a2 2 0 0 1-.653.224c-.057.392-.096.8-.096 1.23c0 2.413.935 4.362 2.088 4.362c.694 0 1.04-.71 1.204-1.796c.163 1.08.508 1.796 1.2 1.796c1.145 0 2.09-1.95 2.09-4.36c0-.543-.053-1.06-.14-1.54c.492.473.966.668 1.418.408c1.007-.56.877-2.718-.29-4.82zm-21.468-2.13a3.512 3.512 0 1 0-3.514-3.512a3.515 3.515 0 0 0 3.514 3.514zm2.535 6.622c-1.592-.885-1.738-3.524-.456-6.354a4.24 4.24 0 0 1-2.078.553c-.956 0-1.832-.32-2.55-.846c-.615.512-1.228 1.246-1.732 2.153c-1.167 2.104-1.295 4.262-.287 4.82c.45.258.925.065 1.414-.406a9 9 0 0 0-.135 1.538c0 2.412.935 4.36 2.088 4.36c.694 0 1.04-.71 1.204-1.795c.165 1.08.51 1.796 1.2 1.796c1.147 0 2.09-1.95 2.09-4.36c0-.433-.04-.842-.097-1.234a2 2 0 0 1-.66-.226z"
+          />
+        </svg>
+      </div>
+      <div class="stat-title">Población</div>
+      <div class="stat-value text-orange-300">
+        {{ country().population | number }}
+      </div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+        >
+          <path
+            fill="currentColor"
+            d="m16 24l-6.09-8.6A8.14 8.14 0 0 1 16 2a8.08 8.08 0 0 1 8 8.13a8.2 8.2 0 0 1-1.8 5.13Zm0-20a6.07 6.07 0 0 0-6 6.13a6.2 6.2 0 0 0 1.49 4L16 20.52L20.63 14A6.24 6.24 0 0 0 22 10.13A6.07 6.07 0 0 0 16 4"
+          />
+          <circle cx="16" cy="9" r="2" fill="currentColor" />
+          <path
+            fill="currentColor"
+            d="M28 12h-2v2h2v14H4V14h2v-2H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V14a2 2 0 0 0-2-2"
+          />
+        </svg>
+      </div>
+      <div class="stat-title">Subregión</div>
+      <div class="stat-value text- text-lime-400">{{ country().subregion }}</div>
+      
+    </div>
+
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="36"
+          viewBox="0 0 36 36"
+        >
+          <path
+            fill="currentColor"
+            d="M33.31 7.35L25 9.94V14h-2v-3.71l-9-4.61V9h-2V5.27l-9.67 4a.53.53 0 0 0-.33.48v20.7a.53.53 0 0 0 .74.49L12 27.12V23h2v4.53l9 4.61V28h2v3.79l8.63-2.7a.53.53 0 0 0 .37-.51V7.86a.53.53 0 0 0-.69-.51M14 21h-2v-4h2Zm0-6h-2v-4h2Zm11 11h-2v-4h2Zm0-6h-2v-4h2Z"
+            class="clr-i-solid clr-i-solid-path-1"
+          />
+          <path fill="none" d="M0 0h36v36H0z" />
+        </svg>
+      </div>
+      <div class="stat-title">Borders</div>
+      <div class="start-40 text-teal-400">{{ country().borders }}</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="50"
+          height="50"
+          viewBox="0 0 50 50"
+        >
+          <g
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          >
+            <path
+              stroke="#344054"
+              d="M18.75 20.833V43.75m6.458-37.5l8.334 14.583zM43.75 20.833H6.25z"
+            />
+            <path
+              stroke="#306cfe"
+              d="M43.75 41.667V8.333c0-1.15-.933-2.083-2.083-2.083H8.333c-1.15 0-2.083.933-2.083 2.083v33.334c0 1.15.933 2.083 2.083 2.083h33.334c1.15 0 2.083-.933 2.083-2.083"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="stat-title">Area</div>
+      <div class="stat-value  text-violet-500">{{ country().area }}</div>
+    </div>
+  </div>
+
+  <div class="diff aspect-[16/6]">
+    <div class="diff-item-1">
+        <img 
+        [alt]="country().name" 
+        [src]="country().flagSvg" 
+        />
+    </div>
+    <div class="diff-item-2">
+      <img
+      class="blur opasity-10"
+        alt="country().name"
+        src="country().flagSvg" />
+    </div>
+    <div class="diff-resizer"></div>
+  </div>
+
+</section>
