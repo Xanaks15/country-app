@@ -26,10 +26,16 @@ export class ByCapitalPageComponent {
     this.isLoading.set(true)
     this.isError.set(null);
 
-    this.CountryService.searchByCapital(query).subscribe ( countries => {
-        this.isLoading.set(false)
-        this.countries.set(countries)
-        
+    this.CountryService.searchByCapital(query).subscribe ({
+        next: (countries) => {
+          this.isLoading.set(false);
+          this.countries.set(countries);
+        },
+        error: (err) => {
+          this.isLoading.set(false)
+          this.countries.set([])
+          this.isError.set(err)
+        },
       })
   }
 }
