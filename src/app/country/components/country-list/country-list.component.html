@@ -41,7 +41,30 @@
                     </td>
                 </tr>
             }
-        </tbody>
 
+            @if (errorMessage()) {
+                <tr>
+                    <td colspan="8" class="text-center">
+                        {{ errorMessage()}}
+                    </td>
+                </tr>
+            }
+
+            <!--  -->
+            @if (countries().length == 0 && !isLoading()) {
+                <tr>
+                    <td colspan="8" class="tex-center">
+                        No Se encontraron resultados
+                    </td>
+                </tr>
+            }
+
+            <!--  -->
+            @if (isLoading()) {
+                <tr>
+                    <td colspan="8" class="text-center">Buscando Paises</td>
+                </tr>
+            }
+        </tbody>
     </table>
 </section>
