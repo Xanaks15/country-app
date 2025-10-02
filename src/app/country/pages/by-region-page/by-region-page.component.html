@@ -6,9 +6,8 @@
         @for (region of regions; track region) {
             <button class="btn btn-outline mr-2 w-[100px]"
             (click)="selectedRegion.set(region)"
-            [class.btn-primary]="selectedRegion()==region"
-            >
-                {{region}}
+            [class.btn-primary]="selectedRegion()===region">
+            {{ region }}
             </button>
         }
     </div>
