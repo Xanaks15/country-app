@@ -1,4 +1,4 @@
-import { Languages } from './rest-countries.interface';
+
 export interface Country{
     cca2: string;
     flag: string;
@@ -12,3 +12,11 @@ export interface Country{
     area: number;
     // timezones: string[];
 }
+
+export type Region = 
+| 'Africa'
+| 'Americas'
+| 'Asia'
+| 'Europe'
+| 'Oceania'
+| 'Antarctic';
